@@ -1,0 +1,201 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.flex{
+  display: flex;
+}
+.flex-direction-column{
+  flex-direction: column;
+}
+.flex-direction-row{
+  flex-direction: row;
+}
+.align-items-center{
+  align-items: center;
+}
+.justify-content-center{
+  justify-content: center;
+}
+.justify-content-space-around{
+  justify-content: space-around;
+}
+.justify-content-space-between{
+  justify-content: space-between;
+}
+.justify-content-right{
+  justify-content: right;
+}
+.align-self-end{
+  align-self: end;
+}
+.align-self-center{
+  align-self: center;
+}
+.flex-grow-1{
+  flex-grow: 1;
+}
+.flex-shrink-0{
+  flex-shrink: 0;
+}
+.flex-1-1-auto{
+  flex: 1 1 auto;
+}
+.black-background{
+  background-color: #242424;
+  color-scheme: light dark;
+}
+.blue-background{
+  background-color: #646cff;
+}
+.orange-background{
+  background-color: orange;
+}
+.white-background{
+  background-color: rgba(255, 255, 255, 0.87);
+}
+.green-color{
+  color: green;
+}
+.red-color{
+  color:red;
+}
+.border-radius-4px{
+  border-radius: 4px;
+}
+.white-text{
+  color: rgba(255, 255, 255, 0.87);
+}
+.mg-bt-4px{
+  margin-bottom: 4px;
+}
+.mg-bt-16px{
+  margin-bottom: 16px;
+}
+.gap-4px{
+  gap:4px;
+}
+.gap-8px{
+  gap:8px;
+}
+.gap-12px{
+  gap:12px
+}
+.gap-16px{
+  gap:16px
+}
+.gap-32px{
+  gap:32px
+}
+.rps-button{
+  padding: 8px 12px 8px 12px;
+  cursor: pointer;
+}
+.width-100{
+  width: 100%;
+}
+.fz-32px{
+  font-size: 32px;
+}
+.fz-26px{
+  font-size: 26px;
+}
+/* .header{
+  flex: 0 1 auto;
+} */
+/* fill rest is the the same class as flex-1-1-auto */
+.fill-rest{
+  flex: 1 1 auto;
+  /* The above is shorthand for:
+  flex-grow: 1,
+  flex-shrink: 1,
+  flex-basis: auto
+  */
+}
+.score-board-header{
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.score-board-grid {
+  display: grid;
+  grid-template: repeat(5, 1fr) / repeat(4, 1fr);
+  grid-gap: 5px;
+  height: 120px;
+}
+.score-board-grid div {
+  background-color: #242424;
+  height: 20px;
+  width: 40px;
+}
+.bt-border{
+  border-bottom: 5px solid rgba(255, 255, 255, 0.87);;
+}
+.player-box-sz{
+  width:260px;
+  height:80px;
+}
+.player-header{
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.sm-player-box-sz{
+  height: 45px;
+  width: 176px;
+}
+
+.loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
