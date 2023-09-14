@@ -33,9 +33,9 @@ export const MXRNDS=10;
 export const nameToEmoji=new Map();
 nameToEmoji.set('player','🧍');
 nameToEmoji.set('m0','🔧');
-nameToEmoji.set('m1','💻');
-nameToEmoji.set('m2','🦾');
-nameToEmoji.set('m3','🤖');
+nameToEmoji.set('m1','🦾');
+nameToEmoji.set('m2','🤖');
+nameToEmoji.set('m3','🧠');
 // verdict color
 export const verdictColor=new Map();
 verdictColor.set(1,'green');
@@ -46,7 +46,9 @@ handToEmoji.set(0,'👊');
 handToEmoji.set(1,'✋');
 handToEmoji.set(2,'✌️');
 // init score
-export const initScore=['','win','loss','draw','m0','0','0','0','m1','0','0','0','m2','0','0','0','m3','0','0','0']
+// export const initScore=['','win','loss','draw','m0','0','0','0','m1','0','0','0','m2','0','0','0','m3','0','0','0']
+export const initScore=['','win','loss','draw',nameToEmoji.get('m0'),'0','0','0',nameToEmoji.get('m1'),'0','0','0',nameToEmoji.get('m2'),'0','0','0',nameToEmoji.get('m3'),'0','0','0']
+
 // score dimensions
 export const SCRN=5;
 export const SCRM=4;

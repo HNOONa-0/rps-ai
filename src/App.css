@@ -33,6 +33,7 @@
 .read-the-docs {
   color: #888;
 } */
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -90,6 +91,7 @@
 }
 .white-background{
   background-color: rgba(255, 255, 255, 0.87);
+  color:rgba(255, 253, 250,0.8);
 }
 .green-color{
   color: green;
@@ -102,6 +104,7 @@
 }
 .white-text{
   color: rgba(255, 255, 255, 0.87);
+  color:rgba(255, 253, 250,0.8);
 }
 .mg-bt-4px{
   margin-bottom: 4px;
@@ -156,20 +159,27 @@
 .score-board-grid {
   display: grid;
   grid-template: repeat(5, 1fr) / repeat(4, 1fr);
-  grid-gap: 5px;
-  height: 120px;
+  column-gap: 2px;
+  row-gap: 1px;
+  height: 115px;
 }
 .score-board-grid div {
-  background-color: #242424;
   height: 20px;
   width: 40px;
 }
-.bt-border{
-  border-bottom: 5px solid rgba(255, 255, 255, 0.87);;
+.bt-border-5px{
+  border-bottom: 5px solid rgba(255, 253, 250,0.8);
 }
-.player-box-sz{
+.bt-border-3px{
+  border-bottom: 3px solid rgba(255, 253, 250,0.8);
+}
+/* .player-box-sz{
   width:260px;
   height:80px;
+} */
+.player-box-sz{
+  width:220px;
+  height:120px;
 }
 .player-header{
   font-size: 24px;
@@ -180,7 +190,20 @@
   height: 45px;
   width: 176px;
 }
-
+/* .refresh-sz{
+  width: 32px;
+  height: 32px;
+} */
+.refresh-sz{
+  width: 16px;
+  height: 16px;
+}
+.shaded{
+  box-shadow: 5px 10px #424242;
+}
+.border-radius-16px{
+  border-radius: 16px;
+}
 .loader {
   position: absolute;
   left: 50%;

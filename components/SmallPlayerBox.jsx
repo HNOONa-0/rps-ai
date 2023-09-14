@@ -4,7 +4,7 @@ import { handToEmoji, handToStr, hands, nameToEmoji, verdictColor } from '../my-
 const SmallPlayerBox = ({name,handleClick,playerHand,modelHand,isPlayer}) => {
   const res=hands.has(playerHand)&&hands.has(modelHand)?ab_res(playerHand,modelHand):null;
   return (
-    <div className='flex flex-direction-column justify-content-center sm-player-box-sz black-background align-self-center'>
+    <div className='flex flex-direction-column justify-content-center sm-player-box-sz black-background align-self-center border-radius-4px'>
         <div className='flex justify-content-center gap-12px fz-26px'>
           {
             isPlayer?

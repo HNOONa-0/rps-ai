@@ -11,7 +11,7 @@ import RightSide from '../components/RightSide'
 import LeftSide from '../components/LeftSide'
 import { init_2dscore } from '../my-utils/other'
 import UpSide from '../components/MiddleSide'
-
+import refreshImg from './assets/358-3582658_reload-icon-white-reload-white-icon-png.png'
 function App() {
   // dimensions of screen
   const [bodyDimension, setBodyDimension] = useState({
@@ -49,6 +49,14 @@ function App() {
     setPlayerHands([...playerHands,curPlayerHand] );
     setScore(newScore);
   }
+  const reset=()=>{
+    setRounds(0);
+    setPlayerHand(null);
+    setModelsHand([null,null,null,null] );
+    setPlayerHands([] );
+    setScore(init_2dscore() );
+    setModels([new M0(), new M1(), new M2(), new M3() ] );
+  }
   useEffect(()=>{
     // init the resize observer
     resizeObserver.observe(document.getElementById("root"));
@@ -58,11 +66,13 @@ function App() {
   },[] );
   return (
     <>
-    <div className='flex justify-content-center black-background mg-bt-4px header'>
-      <h1>Round {rounds+1}</h1>
+    <div className='flex justify-content-space-between black-background mg-bt-4px header'>
+      <div className='flex justify-content-center flex-grow-1 gap-16px'>
+        <h1>Round {rounds+1}</h1>
+      </div>
     </div>
     <div className='flex fill-rest flex fill-rest flex-direction-column'>
-      <ScoreBoard score={score}/>
+      <ScoreBoard score={score} handleClick={reset}/>
       {
         bodyDimension.width<=MINW || bodyDimension.height<=MINH ?
           <UpSide models={models} handleClick={handlePlayerHand} playerHand={playerHand} modelsHand={modelsHand} />
